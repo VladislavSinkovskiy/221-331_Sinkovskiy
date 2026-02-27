@@ -1,0 +1,102 @@
+[
+    {
+        "url": "https://example1.com",
+        "login": "user1",
+        "password": "password1"
+    },
+    {
+        "url": "https://example2.com",
+        "login": "user2",
+        "password": "password2"
+    },
+    {
+        "url": "https://example3.com",
+        "login": "user3",
+        "password": "password3"
+    },
+    {
+        "url": "https://example4.com",
+        "login": "user4",
+        "password": "password4"
+    },
+    {
+        "url": "https://example5.com",
+        "login": "user5",
+        "password": "password5"
+    },
+    {
+        "url": "https://example6.com",
+        "login": "user6",
+        "password": "password6"
+    },
+    {
+        "url": "https://example7.com",
+        "login": "user7",
+        "password": "password7"
+    },
+    {
+        "url": "https://example8.com",
+        "login": "user8",
+        "password": "password8"
+    },
+    {
+        "url": "https://example9.com",
+        "login": "user9",
+        "password": "password9"
+    },
+    {
+        "url": "https://example10.com",
+        "login": "user10",
+        "password": "password10"
+    },
+    {
+        "url": "https://example11.com",
+        "login": "user11",
+        "password": "password11"
+    },
+    {
+        "url": "https://example12.com",
+        "login": "user12",
+        "password": "password12"
+    },
+    {
+        "url": "https://example13.com",
+        "login": "user13",
+        "password": "password13"
+    },
+    {
+        "url": "https://example14.com",
+        "login": "user14",
+        "password": "password14"
+    },
+    {
+        "url": "https://example15.com",
+        "login": "user15",
+        "password": "password15"
+    },
+    {
+        "url": "https://example16.com",
+        "login": "user16",
+        "password": "password16"
+    },
+    {
+        "url": "https://example17.com",
+        "login": "user17",
+        "password": "password17"
+    },
+    {
+        "url": "https://example18.com",
+        "login": "user18",
+        "password": "password18"
+    },
+    {
+        "url": "https://example19.com",
+        "login": "user19",
+        "password": "password19"
+    },
+    {
+        "url": "https://example20.com",
+        "login": "user20",
+        "password": "password20"
+    }
+]

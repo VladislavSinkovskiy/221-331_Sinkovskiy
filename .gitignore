@@ -1,0 +1,25 @@
+# Qt generated files
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+Makefile
+*.moc
+moc_*.cpp
+ui_*.h
+*.pdb
+*.obj
+*.ilk
+*.exe
+*.dll
+*.dylib
+*.apk
+*.zip
+.qmake.cache
+.qmake.stash
+
+# IDE settings files
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store

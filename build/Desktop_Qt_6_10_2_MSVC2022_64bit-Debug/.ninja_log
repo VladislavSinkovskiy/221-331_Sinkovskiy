@@ -1,0 +1,18 @@
+# ninja log v6
+85	487	7939265268121132	LR_1_autogen/timestamp	9250af1ee099178f
+85	487	7939265268121132	C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/mocs_compilation.cpp	9250af1ee099178f
+2454	11670	7939264220521261	CMakeFiles/LR_1.dir/LR_1_autogen/mocs_compilation.cpp.obj	d6b30799686a0970
+85	487	7939265268121132	LR_1_autogen/mocs_compilation.cpp	9250af1ee099178f
+85	487	7939265268121132	C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/timestamp	9250af1ee099178f
+508	3624	7939265272473287	CMakeFiles/LR_1.dir/pindialog.cpp.obj	723fc742dc5de0a6
+2506	12594	7939264221023991	CMakeFiles/LR_1.dir/creditem.cpp.obj	e8431c42dc632b67
+2466	10830	7939264220627173	CMakeFiles/LR_1.dir/main.cpp.obj	9960812d92d1416f
+497	5022	7939265272362661	CMakeFiles/LR_1.dir/mainwindow.cpp.obj	663a982e7ec38c7a
+5023	5600	7939265317485557	LR_1.exe	297a2fc0150e1911
+154	854	7939269207278300	LR_1_autogen/timestamp	9250af1ee099178f
+154	854	7939269207278300	LR_1_autogen/mocs_compilation.cpp	9250af1ee099178f
+154	854	7939269207278300	C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/timestamp	9250af1ee099178f
+154	854	7939269207278300	C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/mocs_compilation.cpp	9250af1ee099178f
+877	5329	7939269214467746	CMakeFiles/LR_1.dir/pindialog.cpp.obj	723fc742dc5de0a6
+857	6704	7939269214268139	CMakeFiles/LR_1.dir/mainwindow.cpp.obj	663a982e7ec38c7a
+6705	7357	7939269272743016	LR_1.exe	297a2fc0150e1911
