@@ -1,5 +1,0 @@
-C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/LR_1.dir
-C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/edit_cache.dir
-C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/rebuild_cache.dir
-C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/LR_1_autogen_timestamp_deps.dir
-C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/LR_1_autogen.dir
