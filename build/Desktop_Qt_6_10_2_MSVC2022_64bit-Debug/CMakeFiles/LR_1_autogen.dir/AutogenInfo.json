@@ -1,19 +1,19 @@
 {
 	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
-	"BUILD_DIR" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen",
-	"CMAKE_BINARY_DIR" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/LR1",
+	"BUILD_DIR" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen",
+	"CMAKE_BINARY_DIR" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/221-331_Sinkovskiy/LR1",
 	"CMAKE_EXECUTABLE" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/LR1/CMakeLists.txt",
-		"C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
-		"C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
+		"C:/221-331_Sinkovskiy/LR1/CMakeLists.txt",
+		"C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake",
+		"C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake",
-		"C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
+		"C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake",
@@ -26,7 +26,7 @@
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-MSVC-CXX.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake",
-		"C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
+		"C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeRCInformation.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake",
 		"C:/Qt/6.10.2/msvc2022_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
@@ -366,21 +366,36 @@
 		"C:/Qt/6.10.2/msvc2022_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"C:/Qt/6.10.2/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"C:/LR1/creds.json"
+		"C:/221-331_Sinkovskiy/LR1/creds.json"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/LR1",
+	"CMAKE_SOURCE_DIR" : "C:/221-331_Sinkovskiy/LR1",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/deps",
+	"DEP_FILE" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "LR_1_autogen/timestamp",
 	"HEADERS" : 
 	[
-		[ "C:/LR1/creditem.h", "MU", "EWIEGA46WW/moc_creditem.cpp", null ],
-		[ "C:/LR1/mainwindow.h", "MU", "EWIEGA46WW/moc_mainwindow.cpp", null ],
-		[ "C:/LR1/pindialog.h", "MU", "EWIEGA46WW/moc_pindialog.cpp", null ]
+		[
+			"C:/221-331_Sinkovskiy/LR1/creditem.h",
+			"MU",
+			"EWIEGA46WW/moc_creditem.cpp",
+			null
+		],
+		[
+			"C:/221-331_Sinkovskiy/LR1/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/221-331_Sinkovskiy/LR1/pindialog.h",
+			"MU",
+			"EWIEGA46WW/moc_pindialog.cpp",
+			null
+		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -425,18 +440,18 @@
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
-	"PARSE_CACHE_FILE" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/LR_1_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/LR_1_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.10.2/msvc2022_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.10.2/msvc2022_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 10,
-	"SETTINGS_FILE" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/LR_1_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/LR_1_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "C:/LR1/creditem.cpp", "MU", null ],
-		[ "C:/LR1/main.cpp", "MU", null ],
-		[ "C:/LR1/mainwindow.cpp", "MU", null ],
-		[ "C:/LR1/pindialog.cpp", "MU", null ]
+		[ "C:/221-331_Sinkovskiy/LR1/creditem.cpp", "MU", null ],
+		[ "C:/221-331_Sinkovskiy/LR1/main.cpp", "MU", null ],
+		[ "C:/221-331_Sinkovskiy/LR1/mainwindow.cpp", "MU", null ],
+		[ "C:/221-331_Sinkovskiy/LR1/pindialog.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -39,7 +39,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug"
+			"value" : "c:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -415,7 +415,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -511,7 +511,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/LR1"
+			"value" : "C:/221-331_Sinkovskiy/LR1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -979,7 +979,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake"
+			"value" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1427,7 +1427,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug"
+			"value" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug"
 		},
 		{
 			"name" : "LR_1_IS_TOP_LEVEL",
@@ -1451,7 +1451,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/LR1"
+			"value" : "C:/221-331_Sinkovskiy/LR1"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",

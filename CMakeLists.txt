@@ -12,7 +12,6 @@ set(CMAKE_AUTORCC ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-# ВАЖНО: исходники лежат в подпапке LR_1 (как на твоём скрине)
 set(APP_DIR "${CMAKE_CURRENT_SOURCE_DIR}/LR_1")
 
 set(PROJECT_SOURCES
@@ -20,16 +19,11 @@ set(PROJECT_SOURCES
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-
     pindialog.cpp
     pindialog.h
     pindialog.ui
-
     creditem.cpp
     creditem.h
-
-
-
     credentials.ui
 )
 

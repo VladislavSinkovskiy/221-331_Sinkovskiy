@@ -47,7 +47,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 38,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
@@ -71,7 +71,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 52,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
@@ -270,7 +270,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/include"
+					"path" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/include"
 				},
 				{
 					"backtrace" : 12,

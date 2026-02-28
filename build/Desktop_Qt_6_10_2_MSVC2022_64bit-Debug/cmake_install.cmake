@@ -1,4 +1,4 @@
-# Install script for directory: C:/LR1
+# Install script for directory: C:/221-331_Sinkovskiy/LR1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,6 +47,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

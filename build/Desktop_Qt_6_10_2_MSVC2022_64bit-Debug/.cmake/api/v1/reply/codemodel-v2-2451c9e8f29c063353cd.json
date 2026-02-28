@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "LR_1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LR_1-Debug-4142629eb5449e811611.json",
+					"jsonFile" : "target-LR_1-Debug-e945accb8731d99e6b2f.json",
 					"name" : "LR_1",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug",
-		"source" : "C:/LR1"
+		"build" : "C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug",
+		"source" : "C:/221-331_Sinkovskiy/LR1"
 	},
 	"version" : 
 	{

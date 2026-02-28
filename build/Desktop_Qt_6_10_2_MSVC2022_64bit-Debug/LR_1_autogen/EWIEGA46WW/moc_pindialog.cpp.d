@@ -1,4 +1,4 @@
-C:/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/EWIEGA46WW/moc_pindialog.cpp: C:/LR1/pindialog.h \
+C:/221-331_Sinkovskiy/LR1/build/Desktop_Qt_6_10_2_MSVC2022_64bit-Debug/LR_1_autogen/EWIEGA46WW/moc_pindialog.cpp: C:/221-331_Sinkovskiy/LR1/pindialog.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/assert.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt.h \
   C:/Program\ Files\ (x86)/Windows\ Kits/10/include/10.0.26100.0/ucrt/corecrt_malloc.h \
