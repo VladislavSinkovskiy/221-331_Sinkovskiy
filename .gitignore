@@ -16,6 +16,7 @@ ui_*.h
 *.zip
 .qmake.cache
 .qmake.stash
+.cmake
 
 # IDE settings files
 .vscode/

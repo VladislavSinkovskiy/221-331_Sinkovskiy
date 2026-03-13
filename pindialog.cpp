@@ -1,10 +1,9 @@
 #include "pindialog.h"
 #include "ui_pindialog.h"
+#include "security_state.h"
+
 #include <QLineEdit>
 #include <QPushButton>
-#include <QLabel>
-
-static const QString kMasterPin = "777";
 
 PinDialog::PinDialog(QWidget *parent)
     : QDialog(parent)
@@ -16,10 +15,17 @@ PinDialog::PinDialog(QWidget *parent)
     setWindowTitle("Подтвердите PIN");
 
     ui->pinLineEdit->setEchoMode(QLineEdit::Password);
-    ui->pinLineEdit->setMaxLength(8);
-    ui->statusLabel->clear();
+    ui->pinLineEdit->setMaxLength(16);
 
-    disconnect(ui->unlockButton, nullptr, this, nullptr);
+    if (SecurityState::isAttackDetected()) {
+        ui->statusLabel->setText(SecurityState::attackMessage());
+        ui->statusLabel->setStyleSheet("color: red;");
+        ui->pinLineEdit->setEnabled(false);
+        ui->unlockButton->setEnabled(false);
+        return;
+    }
+
+    ui->statusLabel->clear();
 
     connect(ui->unlockButton, &QPushButton::clicked,
             this, &PinDialog::onUnlockClicked);
@@ -35,7 +41,7 @@ PinDialog::~PinDialog()
 
 QString PinDialog::pin() const
 {
-    return ui->pinLineEdit->text();
+    return ui->pinLineEdit->text().trimmed();
 }
 
 void PinDialog::onUnlockClicked()
@@ -44,12 +50,6 @@ void PinDialog::onUnlockClicked()
 
     if (entered.isEmpty()) {
         ui->statusLabel->setText("PIN не должен быть пустым.");
-        ui->statusLabel->setStyleSheet("color: red;");
-        return;
-    }
-
-    if (entered != kMasterPin) {
-        ui->statusLabel->setText("Неверный PIN-код.");
         ui->statusLabel->setStyleSheet("color: red;");
         return;
     }
