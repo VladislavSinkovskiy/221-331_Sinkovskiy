@@ -132,22 +132,21 @@ bool MainWindow::loadCredsFromEncryptedFile(const QString& path, const QString& 
         return false;
     }
 
-    QByteArray encryptedFile = f.readAll();
-    f.close();
-
-    if (encryptedFile.size() <= 16) {
-        CryptoUtils::secureZero(encryptedFile);
+    if (f.size() <= 16) {
+        f.close();
         return false;
     }
 
     QByteArray fileKey = CryptoUtils::deriveKeyFromPin(pin);
 
     QByteArray plainJson;
-    if (!CryptoUtils::decryptAes256Cbc(encryptedFile, fileKey, &plainJson)) {
+    if (!CryptoUtils::decryptAes256CbcFromDevice(f, fileKey, &plainJson)) {
         CryptoUtils::secureZero(fileKey);
-        CryptoUtils::secureZero(encryptedFile);
+        f.close();
         return false;
     }
+
+    f.close();
 
     QByteArray memoryKey = CryptoUtils::deriveKeyFromPin(pin + "::memory-layer::v1");
 
@@ -157,7 +156,6 @@ bool MainWindow::loadCredsFromEncryptedFile(const QString& path, const QString& 
     if (err.error != QJsonParseError::NoError || !doc.isArray()) {
         CryptoUtils::secureZero(fileKey);
         CryptoUtils::secureZero(memoryKey);
-        CryptoUtils::secureZero(encryptedFile);
         CryptoUtils::secureZero(plainJson);
         return false;
     }
@@ -203,7 +201,6 @@ bool MainWindow::loadCredsFromEncryptedFile(const QString& path, const QString& 
             CryptoUtils::secureZero(encPassword);
             CryptoUtils::secureZero(fileKey);
             CryptoUtils::secureZero(memoryKey);
-            CryptoUtils::secureZero(encryptedFile);
             CryptoUtils::secureZero(plainJson);
             creds_.clear();
             return false;
@@ -219,7 +216,6 @@ bool MainWindow::loadCredsFromEncryptedFile(const QString& path, const QString& 
 
     CryptoUtils::secureZero(fileKey);
     CryptoUtils::secureZero(memoryKey);
-    CryptoUtils::secureZero(encryptedFile);
     CryptoUtils::secureZero(plainJson);
 
     return !creds_.isEmpty();

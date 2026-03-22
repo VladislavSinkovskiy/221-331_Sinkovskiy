@@ -112,7 +112,7 @@ static bool verifyTextSectionSha256(QString *errorOut = nullptr)
     qDebug() << "Calculated SHA256:" << calculatedHash.toHex();
 
     const QByteArray referenceHash = QByteArray::fromHex(
-        "df064a52b37d89ade5e2b34b09974cfeaad11e309545ebed582b01b986d83b82"
+        "85053fa9d717a7c766989455d25136ef8eeb9669a77c7df10ee2c1578038e602"
         );
     if (calculatedHash != referenceHash) {
         if (errorOut) {

@@ -5,6 +5,8 @@
 #include <openssl/rand.h>
 #include <openssl/sha.h>
 
+#include <QFileDevice>
+
 namespace CryptoUtils {
 
 QByteArray deriveKeyFromPin(const QString& pin)
@@ -151,6 +153,102 @@ bool decryptAes256Cbc(const QByteArray& blob,
     } while (false);
 
     EVP_CIPHER_CTX_free(ctx);
+
+    if (!ok) {
+        secureZero(plainText);
+    }
+
+    return ok;
+}
+
+bool decryptAes256CbcFromDevice(QIODevice& device,
+                                const QByteArray& key32,
+                                QByteArray* outPlainText)
+{
+    if (!outPlainText || key32.size() != 32 || !device.isOpen()) {
+        return false;
+    }
+
+    QByteArray ivBytes = device.read(16);
+    if (ivBytes.size() != 16) {
+        secureZero(ivBytes);
+        return false;
+    }
+
+    EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
+    if (!ctx) {
+        secureZero(ivBytes);
+        return false;
+    }
+
+    constexpr qint64 kChunkSize = 4096;
+
+    QByteArray plainText;
+    QByteArray inChunk;
+    QByteArray outChunk;
+    outChunk.resize(static_cast<int>(kChunkSize) + EVP_MAX_BLOCK_LENGTH);
+
+    bool streamOk = true;
+    bool ok = false;
+
+    do {
+        if (EVP_DecryptInit_ex(ctx,
+                               EVP_aes_256_cbc(),
+                               nullptr,
+                               reinterpret_cast<const unsigned char*>(key32.constData()),
+                               reinterpret_cast<const unsigned char*>(ivBytes.constData())) != 1) {
+            break;
+        }
+
+        while (!device.atEnd()) {
+            inChunk = device.read(kChunkSize);
+
+            if (inChunk.isEmpty()) {
+                break;
+            }
+
+            int outLen = 0;
+            if (EVP_DecryptUpdate(ctx,
+                                  reinterpret_cast<unsigned char*>(outChunk.data()),
+                                  &outLen,
+                                  reinterpret_cast<const unsigned char*>(inChunk.constData()),
+                                  inChunk.size()) != 1) {
+                streamOk = false;
+                secureZero(inChunk);
+                break;
+            }
+
+            if (outLen > 0) {
+                plainText.append(outChunk.constData(), outLen);
+            }
+
+            secureZero(inChunk);
+        }
+
+        if (!streamOk) {
+            break;
+        }
+
+        int finalLen = 0;
+        if (EVP_DecryptFinal_ex(ctx,
+                                reinterpret_cast<unsigned char*>(outChunk.data()),
+                                &finalLen) != 1) {
+            break;
+        }
+
+        if (finalLen > 0) {
+            plainText.append(outChunk.constData(), finalLen);
+        }
+
+        *outPlainText = plainText;
+        ok = true;
+    } while (false);
+
+    EVP_CIPHER_CTX_free(ctx);
+
+    secureZero(ivBytes);
+    secureZero(inChunk);
+    secureZero(outChunk);
 
     if (!ok) {
         secureZero(plainText);
